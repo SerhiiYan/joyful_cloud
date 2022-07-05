@@ -1,12 +1,116 @@
-* {
+@import './variables.scss';
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Gantari', sans-serif;
 }
 
 .wrapper {
-
-  // box-shadow: 0px 0px 7px -1px rgba(43, 43, 43, 0.2);
+  max-width: 1024px;
+  height: 100vh; //change
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 35px;
+  box-shadow: 0px 0px 15px -1px rgba(43, 43, 43, 0.2);
 }
 
-.App {
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(1, 0, 0, .1);
+  padding: 10px;
+  box-shadow: 0px 10px 3px -9px rgba(34, 60, 80, 0.1);
 
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .logo-animation {
+      animation: $logo-grow linear 2s infinite;
+    }
+    span {
+      font-weight: 900;
+      font-size: 3rem;
+    }
+    .logo-fullname {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.5rem;
+      span {
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding-bottom: 0.3rem;
+      li {
+        cursor: pointer;
+        margin-left: 0.9rem;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 25px 10px 25px;
+  height: 50%;
+
+
+  .main {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    .left-block {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-size: 4.5rem;
+      }
+      span {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1rem;
+      }
+      button {
+        padding: 13px 15px;
+        width: 160px;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        border: none;
+        letter-spacing: 0.1rem;
+        margin-top: 40px;
+        color: #fff;
+        outline: none;
+        transition: ease-in 0.1s;
+        animation: color-change-5x 8s linear infinite alternate both;
+      }
+      button:active {
+        transform: scale(0.9);
+      }
+
+    }
+    .right-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
