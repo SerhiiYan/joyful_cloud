@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/joyful_cloud/static/css/main.c5b90853.css",
+    "main.js": "/joyful_cloud/static/js/main.ecc1d694.js",
+    "index.html": "/joyful_cloud/index.html",
+    "main.c5b90853.css.map": "/joyful_cloud/static/css/main.c5b90853.css.map",
+    "main.ecc1d694.js.map": "/joyful_cloud/static/js/main.ecc1d694.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5b90853.css",
+    "static/js/main.ecc1d694.js"
+  ]
+}
